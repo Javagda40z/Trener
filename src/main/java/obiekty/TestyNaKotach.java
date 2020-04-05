@@ -4,24 +4,31 @@ package obiekty;
 public class TestyNaKotach {
 
     public static void main(String[] args) {
-        Cat filemon = Cat.stworzKota("Filemon");
+//        Cat filemon = Cat.stworzKota("Filemon");
+//
+//        Cat kot = new Cat("JakisKot");
+//
+//
+//        System.out.println(filemon.getLicznikZlapanychMyszy());
+//        filemon.eatMouse();
+//        filemon.eatMouse();
+//        filemon.eatMouse();
+//        filemon.eatMouse();
+//        filemon.eatMouse();
+//        System.out.println(filemon.getLicznikZlapanychMyszy());
+//
+//        if (czyPowinienDostacMleko(filemon)) {
+//            System.out.println("Daje mleko dla kota");
+//        } else {
+//            System.out.println("Za malo zjedzonych myszy, zjedz wiecej to dostaniesz mleko");
+//        }
 
-        Cat kot = new Cat("JakisKot");
-
-
-        System.out.println(filemon.getLicznikZlapanychMyszy());
-        filemon.eatMouse();
-        filemon.eatMouse();
-        filemon.eatMouse();
-        filemon.eatMouse();
-        filemon.eatMouse();
-        System.out.println(filemon.getLicznikZlapanychMyszy());
-
-        if (czyPowinienDostacMleko(filemon)) {
-            System.out.println("Daje mleko dla kota");
-        } else {
-            System.out.println("Za malo zjedzonych myszy, zjedz wiecej to dostaniesz mleko");
-        }
+        Cat cat1 = new Cat();
+        Cat filemon = new Cat("Filemon");
+        Cat cat2 = new Cat();
+        System.out.println(cat1.getImie());
+        System.out.println(filemon.getImie());
+        System.out.println(cat2.getImie());
 
     }
 

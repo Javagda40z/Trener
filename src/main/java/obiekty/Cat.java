@@ -1,13 +1,18 @@
 package obiekty;
 
 public class Cat implements Animal {
-
+    private static int licznikKotow = 0;
     private int licznikZlapanychMyszy = 0;
     private String imie;
 
 //    private Cat(String imie) { // nie mozna stworzyc poza tą klasą
 //        this.imie = imie;
 //    }
+
+    public Cat() {
+        this("Kot o ID: " + licznikKotow);
+        licznikKotow++;
+    }
 
     public Cat(String imie) {
         this.imie = imie;
@@ -42,5 +47,9 @@ public class Cat implements Animal {
     public void move() {
 
         System.out.println("Chodzę");
+    }
+
+    public String getImie() {
+        return imie;
     }
 }
