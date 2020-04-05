@@ -3,6 +3,21 @@ package obiekty;
 public class Cat implements Animal {
 
     private int licznikZlapanychMyszy = 0;
+    private String imie;
+
+//    private Cat(String imie) { // nie mozna stworzyc poza tą klasą
+//        this.imie = imie;
+//    }
+
+    public Cat(String imie) {
+        this.imie = imie;
+    }
+
+    public static Cat stworzKota(String imie) { // to moze
+        Cat kot = new Cat(imie);
+        kot.licznikZlapanychMyszy = 50;
+        return kot;
+    }
 
     public void drap() {
         //kot drapie
@@ -14,12 +29,18 @@ public class Cat implements Animal {
 
     }
 
-    @Override
-    public void makeSound() {
-        System.out.println("Miauuuuuuuu!");
-    }
-
     public int getLicznikZlapanychMyszy() {
         return licznikZlapanychMyszy;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Miauuu!");
+    }
+
+    @Override
+    public void move() {
+
+        System.out.println("Chodzę");
     }
 }

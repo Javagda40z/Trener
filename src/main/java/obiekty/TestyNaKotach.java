@@ -4,7 +4,11 @@ package obiekty;
 public class TestyNaKotach {
 
     public static void main(String[] args) {
-        Cat filemon = new Cat();
+        Cat filemon = Cat.stworzKota("Filemon");
+
+        Cat kot = new Cat("JakisKot");
+
+
         System.out.println(filemon.getLicznikZlapanychMyszy());
         filemon.eatMouse();
         filemon.eatMouse();
