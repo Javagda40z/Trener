@@ -35,7 +35,7 @@ public class KlasaTestowa {
     }
 
     public static void dajGlosyDlaListyZwierzat(List<Animal> zwierzeta) {
-
+//
         for (Animal animal : zwierzeta) {
             animal.makeSound();
         }
