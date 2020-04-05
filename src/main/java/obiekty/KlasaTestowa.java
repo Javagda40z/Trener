@@ -27,7 +27,7 @@ public class KlasaTestowa {
         dajGlosyDlaListyZwierzat(listaZwierzat);
     }
 
-    public static void dajGlosyDlaTablicyZwierzat(Animal zwierzeta[]) {
+    public static void dajGlosyDlaTablicyZwierzat(Animal[] zwierzeta) {
 
         for (Animal animal : zwierzeta) {
             animal.makeSound();
